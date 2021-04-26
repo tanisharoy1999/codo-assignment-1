@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        makePostRequest("https://run.mocky.io/v3/16375822-6d22-4d61-b131-6672e9e13884", "dummy_json", null, "post", "json", "div");
+        
+    });
+});
+
+function makePostRequest(url, data, headers, httpVerb, dataType, elementId){
+    alert('click');
+    $.ajax({
+    url: url,
+    type: httpVerb,
+    data: data,
+    headers: {
+        Header_Name_One: 'Header Value One',
+        "Header Name Two": 'Header Value Two'
+    },
+    dataType: 'json',
+    success: function (data) {
+      alert("success");
+    }
+}).done(function(msg){
+    alert('done');
+  });
+}
+</script>
+<style >
+    h2,h5 {
+  overflow: hidden;
+  text-align: center;
+  color: #a97e49;
+}
+
+h5:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 150%;
+}
+
+
+h5:after {
+ right: 1.5em;
+  margin-left: -80%;
+  left: 1.5em;
+  margin-right: -80%;
+}
+p:left_text{
+    text-decoration-style: left;
+    color: #a97e49;
+}
+p:right_text{
+    text-decoration-style: left;
+    color: #a97e35;
+}
+
+</style>
+</head>
+<body>
+   <div class="container">
+           
+            <header>
+                <nav class="codrops-demos">
+                    <h2 id="" >Demo Digit</h2>
+                    <h5> Get 61 City-Kolkata,State-West Bengal<br><br>Phone Number-8464946495, Email- gsgd@codomotive.com<br><br>GST No - GH6383738<br></h5>
+
+                </nav>
+            </header>
+            <section>
+                <div id="" class="">
+                    <form>
+                    <div>
+                       <p>Table No:<span style="display:inline-block; width: 90%;"></span><span style="color: #a97e35;"> Take Away</span></p>
+                        <p>Date-Time:<span style="display:inline-block; width: 85%;"></span><span style="color: #a97e35;">2020-10-28 19:38:48.0</span></p>
+                    <div>
+                        <table style=" width: 100%;height: 50px;background-color: #a58b81;">
+                             <tr>
+                                <td colspan="1" style="text-align: center;">No</td>
+                                <td colspan="6" style="text-align: left;">Item Name</td>
+                                <td colspan="3" style="text-align: center;">Price</td>
+                                <td colspan="3" style="text-align: center;">QTY</td>
+                                <td colspan="3" style="text-align: center;" >Amt.</td>
+                            </tr>
+                            </table>
+                        <table style=" width: 100%;  background-color: white;">
+                            <tr>
+                                <td colspan="1" style="text-align: center;">1</td>
+                                <td colspan="6" style="text-align: left;">Tandoori Chicken(half)</td>
+                                <td colspan="3" style="text-align: center;">200</td>
+                                <td colspan="3" style="text-align: center;">6</td>
+                                <td colspan="3"  style="text-align: center;">1200 </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h5></h5>
+                    <div>
+                        <p><b>Sub Total</b><span style="display:inline-block; width: 91%;"></span><span style="color: #a97e35;"> Rs.1200</span></p>
+                        <p><b>Discount(0%)</b><span style="display:inline-block; width: 95%;"></span><span style="color: #a97e35;"> 0.00</span></p>
+                    </div>
+                    <div style="width: 100%;height: 40px;background-color: #80808057;">
+                        <p >Grand Total<span style="display:inline-block; width: 90%"></span><span style="color: #a97e35;"> Rs.1260</span></p>
+                        <p style="text-align: center;color: white;height: 40px;background-color: #ffc822;">Thank you!</p>
+                    </div>
+                    <div style="width: 100%;">
+                       
+                    </div>
+                </form>
+                </div>
+            </section>
+           
+</form>
+</div>
+
+</body>
+</html>
